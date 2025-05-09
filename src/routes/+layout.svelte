@@ -8,6 +8,7 @@
 </script>
 
 <script lang="ts">
+  import 'jazz-inspector-element'
   import { onMount } from 'svelte'
   import '../app.css'
   import { ModeWatcher } from 'mode-watcher'
@@ -42,3 +43,4 @@
     {@render children?.()}
   </main>
 </JazzProvider>
+<jazz-inspector> </jazz-inspector>
