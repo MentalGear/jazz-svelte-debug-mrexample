@@ -99,14 +99,34 @@
   }
 </script>
 
-<h1 class="mb-20 text-5xl">MRE Svelte Jazz</h1>
+<div class="relative my-4 flex flex-col gap-2">
+  <h1 class="m-5 text-5xl">Jazz Svelte Example</h1>
 
-<button onclick={addImage}>Click : add new image</button>
+  <p class="m-4 mb-4 bg-white/10 p-4">
+    Store and load jazz images (including auto different sizes & low-res placeholder)
+  </p>
+
+  <button class="overflow-hidden rounded-xl bg-blue-500 p-4" onclick={addImage}>
+    Load image from URL & store as Jazz Image</button
+  >
+
+  <button
+    class="max-w-[400px] self-center overflow-hidden rounded-xl bg-red-800/50 p-2"
+    onclick={() => {
+      localStorage.clear()
+      indexedDB.databases().then((dbs) => dbs.forEach((db) => indexedDB.deleteDatabase(db.name)))
+      window.location.reload()
+    }}
+  >
+    Clear LocalStorage & indexdb & reload
+  </button>
+</div>
 
 <!-- Image List -->
 <div class="space-y-4">
   {#if itemImages.current && itemImages.current.length > 0}
-    {#each itemImages.current as itemImage (itemImage?.id)}
+    {@const reveresedList = itemImages.current.toReversed()}
+    {#each reveresedList as itemImage (itemImage?.id)}
       {@const imageUrlFromBlob = makeUrl(itemImage?.image) ?? ''}
       {#if itemImage?.image}
         <div class="border p-2">
@@ -116,6 +136,6 @@
       {/if}
     {/each}
   {:else}
-    <p class="text-center text-gray-500">No images yet</p>
+    <p class="p-10 text-center text-xl">No images yet</p>
   {/if}
 </div>

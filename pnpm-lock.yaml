@@ -957,9 +957,6 @@ packages:
   cojson@0.13.21:
     resolution: {integrity: sha512-RdeZNPbH05FLf9k3tmSRKeP2idCtM/hW+yTmSLhxSnTb8CrK+VwMHkeD5kS6rUOBJ6gq3eaEoyx8DY8Wdbv79A==}
 
-  cojson@0.13.21:
-    resolution: {integrity: sha512-RdeZNPbH05FLf9k3tmSRKeP2idCtM/hW+yTmSLhxSnTb8CrK+VwMHkeD5kS6rUOBJ6gq3eaEoyx8DY8Wdbv79A==}
-
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
@@ -1453,9 +1450,6 @@ packages:
     resolution: {integrity: sha512-LSdZG462lZM61ES/16LGIgs8Ocs+4Nm6WIc4+mxa4y+iW6jfraYh5ghYFq8sJcK+NhWupRx071hP9B5rS0wicg==}
     peerDependencies:
       svelte: ^5.0.0
-
-  jazz-tools@0.13.21:
-    resolution: {integrity: sha512-ao0NVlfHZT4qVS/rqVDwzKaecE0lZfEI17YS/KkuLjysjoFNEtDrt78ubZsHnas/1+yUB2HHY1Zfum9QKFcPNQ==}
 
   jazz-tools@0.13.21:
     resolution: {integrity: sha512-ao0NVlfHZT4qVS/rqVDwzKaecE0lZfEI17YS/KkuLjysjoFNEtDrt78ubZsHnas/1+yUB2HHY1Zfum9QKFcPNQ==}
@@ -3197,17 +3191,6 @@ snapshots:
       neverthrow: 7.2.0
       queueueue: 4.1.2
 
-  cojson@0.13.21:
-    dependencies:
-      '@noble/ciphers': 0.1.4
-      '@noble/curves': 1.9.0
-      '@noble/hashes': 1.8.0
-      '@opentelemetry/api': 1.9.0
-      '@scure/base': 1.2.1
-      jazz-crypto-rs: 0.0.7
-      neverthrow: 7.2.0
-      queueueue: 4.1.2
-
   color-convert@2.0.1:
     dependencies:
       color-name: 1.1.4
@@ -3753,12 +3736,6 @@ snapshots:
       jazz-browser: 0.13.21
       jazz-tools: 0.13.21
       svelte: 5.28.2
-
-  jazz-tools@0.13.21:
-    dependencies:
-      '@scure/bip39': 1.6.0
-      cojson: 0.13.21
-      fast-myers-diff: 3.2.0
 
   jazz-tools@0.13.21:
     dependencies:

@@ -1,15 +1,21 @@
 # About
-MRE svelte useCoState debug
+### Sveltekit / Svelte Jazz Example
 
-## Reproduction Steps
+- Store and load jazz images
+  - jazz automatically generates responsive sizes & low-res placeholder
+- how to useCoState
+- debug using jazz-inspector (bottom right icon)
+
+
+## Setup
 
 1. `pnpm i`
 2. `pnpm dev`
-3. Open main page
-4. With no data, click "Add new image" -> images appear
-5. Reload the page, try the button again -> nothing appears
+3. Open main page & jazz
 
-However, you may notice if you add some text to the html section of the page.svelte file (e.g. a 'hello world'), save, then again make an edit, save again, that this will trigger the hot reload and the images appear.
+
+## Acknowledgements
+Thx to [joeinnes](https://github.com/joeinnes) for the swift help with fix reactivity issues.
 
 ----
 
