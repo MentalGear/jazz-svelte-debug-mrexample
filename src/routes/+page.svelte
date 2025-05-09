@@ -15,7 +15,6 @@
     return file
   }
 
-  // const { me } = useAccount()
   const { me } = $derived(useAccount({ resolve: { root: { itemImages: true } } }))
 
   // let currentAccount = $derived<AppAccount | undefined>(me instanceof AppAccount ? me : undefined)
@@ -68,7 +67,6 @@
   // ========================================================================
 
   // retrieve images
-  // const itemImagesId = me?.root?._refs.itemImages.id
   const itemImagesId = $derived(me?.root?._refs.itemImages.id)
   const itemImages = $derived(
     useCoState(ListOfItemImages, itemImagesId, {
@@ -77,11 +75,6 @@
       },
     })
   )
-  // const itemImages = useCoState(ListOfItemImages, itemImagesId, {
-  //   resolve: {
-  //     $each: true,
-  //   },
-  // })
 
   $inspect(itemImages).with(console.log)
 
@@ -92,7 +85,6 @@
 
     const targetWidth = window.innerWidth
     const appropriateRes = imageDefinition.highestResAvailable({ targetWidth })
-    // if (!appropriateRes) throw new Error(`no resolution found: ${appropriateRes}`)
     if (!appropriateRes) return imageDefinition.placeholderDataURL
     // debugger
     console.log(`Found highest resolution: ${appropriateRes.res}`)
