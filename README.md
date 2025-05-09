@@ -15,7 +15,7 @@
 
 
 ## Acknowledgements
-Thx to [joeinnes](https://github.com/joeinnes) for the swift help with fix reactivity issues.
+Thx to [joeinnes](https://github.com/joeinnes) for the swift help to fix the reactivity issues.
 
 ----
 
