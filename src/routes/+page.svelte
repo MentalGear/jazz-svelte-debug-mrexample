@@ -103,7 +103,7 @@
   <h1 class="m-5 text-5xl">Jazz Svelte Example</h1>
 
   <p class="m-4 mb-4 bg-white/10 p-4">
-    Store and load jazz images (including auto different sizes & low-res placeholder)
+    Store and load jazz images (including auto sizes & low-res placeholder)
   </p>
 
   <button class="overflow-hidden rounded-xl bg-blue-500 p-4" onclick={addImage}>
