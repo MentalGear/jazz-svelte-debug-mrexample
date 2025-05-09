@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "jazz-browser-media-images": "^0.13.19",
+    "jazz-inspector-element": "^0.13.21",
     "jazz-svelte": "^0.13.19",
     "jazz-tools": "^0.13.19",
     "mode-watcher": "0.5.1",
